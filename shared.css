@@ -13,4 +13,28 @@ body{
     */
     text-transform: uppercase;
     text-shadow:5px 5px 10px ;
+
+}
+#header {
+    display: flex;
+    flex-direction:row;
+    
+    align-items: center ;
+    /*
+    flex özelliğine sahip kapsayıcıların yatay eksende nasıl hizalacağını ayarlar
+    */
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;    
+    display: flex;
+    
+}
+nav a{
+    padding-right: 20px;
+    text-decoration: none;
+
 }
