@@ -1,3 +1,17 @@
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  /*
+  flex özelliğine sahip kapsayıcıların yatay eksende nasıl hizalacağını ayarlar
+  */
+  justify-content: space-between;
+
+  /*
+  justify-contentin yatay eksende yaptığı şeyleri dikey eksende yapar.
+  */
+  align-items: center;
+}
 #section1 {
   background-image: url("ocean.jpg");
   height: 700px;
@@ -38,16 +52,69 @@ nav a {
   font-size: larger;
   color: rgb(189, 25, 175);
   padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  text-decoration: none;
 }
 nav a:hover {
   background-color: rgb(189, 25, 175);
   color: rgb(221, 221, 221);
-  border:1px solid white;
+  border: 1px solid white;
   border-radius: 8px;
 }
-nav li {
-  margin-right: 7px;
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding-right: 25px;
+  display: flex;
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Monoton", cursive;
+  color: rgb(189, 25, 175);
+  font-size: 50px;
+  margin-left: 25px;
+  text-decoration: none;
+  /*
+  text-transform upper ve lower caseyi ve kombinasyonları için bir property
+  */
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px;
+}
+#photos {
+  display: flex;
+  list-style: none;
+  padding-left: 40px;
+  justify-content:space-between;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  
+}
+#section2 h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+#section2 
+{
+  background-color: rgb(227,255,253);
+  position:relative;
+  top:-24px
+  
+}
+.photo img {
+  height: 200px;
+  width: 350px;
+  box-shadow: 4px 6px 8px rgb(45, 4, 65);
+  border-radius: 15px;
+  /*
+   Object fit özelliği, resim veya videolarımızı ebeveyn etiketleri içerisinde uygun bir şekilde boyutlandırmamızı sağlar.
+  */
+}
+.photo strong{
+  color:rgb(189, 25, 175);
 }
