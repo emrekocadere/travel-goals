@@ -1,17 +1,4 @@
-#header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  /*
-  flex özelliğine sahip kapsayıcıların yatay eksende nasıl hizalacağını ayarlar
-  */
-  justify-content: space-between;
 
-  /*
-  justify-contentin yatay eksende yaptığı şeyleri dikey eksende yapar.
-  */
-  align-items: center;
-}
 #section1 {
   background-image: url("ocean.jpg");
   height: 700px;
@@ -47,40 +34,9 @@
   font-family: "Quicksand", sans-serif;
   margin-bottom: 50px;
 }
-nav a {
-  font-weight: bold;
-  font-size: larger;
-  color: rgb(189, 25, 175);
-  padding-right: 10px;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: rgb(189, 25, 175);
-  color: rgb(221, 221, 221);
-  border: 1px solid white;
-  border-radius: 8px;
-}
 
-nav ul {
-  list-style: none;
-  margin: 0px;
-  padding-right: 25px;
-  display: flex;
-}
 
-#page-logo a {
-  padding: 10px;
-  font-family: "Monoton", cursive;
-  color: rgb(189, 25, 175);
-  font-size: 50px;
-  margin-left: 25px;
-  text-decoration: none;
-  /*
-  text-transform upper ve lower caseyi ve kombinasyonları için bir property
-  */
-  text-transform: uppercase;
-  text-shadow: 5px 5px 10px;
-}
+
 #photos {
   display: flex;
   list-style: none;
@@ -119,22 +75,3 @@ nav ul {
   color:rgb(189, 25, 175);
 }
 
-footer{
-  background:linear-gradient(70deg,rgb(24,24,24),rgb(25,29,29))
-}
-
-footer li{
-  width:80px;
-  height: 80px;
-  margin:40px;
-}
-footer img{
-  width: 100%;
-  height: 100%;
-}
-footer ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-
-}
